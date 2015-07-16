@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   get 'contact' => 'welcome#contact'
 
+  get 'present1' => 'welcome#present1'
+  get 'present2' => 'welcome#present2'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
