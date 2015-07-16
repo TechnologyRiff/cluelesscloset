@@ -22,9 +22,6 @@
 
   </head>
   <body>
-    <div class="container">
-      <%= image_tag "CluelessCloset.jpg" %><%= image_tag "weather_banner.jpg" %>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -43,7 +40,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="#">Philadelphia</a>
+              <a href="#">Change Location</a>
               
             </li>
 
@@ -63,137 +60,51 @@
         </div>
         <!-- /.navbar-collapse -->
       </div>
+
       <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-
-
     <div class="container">
-      <!-- Search -->
-      <div class="row">
-
-        <div class="col-xs-6 col-xs-offset-6">
-          <form role="form" action="/search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="heL3V4uUSg7g31RnPmCqmoYxHk5V//nUhyhv66wRDWZHY+eCVx9dKfWXHbPowjH+oiPM9AchxhUK16C295JhJA==" />
-            <p>
-              <div class="form-group"><label class="sr-only control-label" for="query">Query</label><input placeholder="Search for..." class="form-control" name="query" id="query" type="text" /></div>
-            </p>
-</form>        </div>
+    <div class="row">
+      <div class="banner">
+          <%= image_tag "CluelessCloset.jpg" %><%= image_tag "weather_banner.jpg" %>
       </div>
-      <!-- /Search -->
-
-      
-
-      <ul class="list-inline center-block text-center">
-    <li>
-      <h3>
-        <a href="/categories/tops">Tops</a>
-      </h3>
-    </li>
-    <li>
-      <h3>
-        <a href="/categories/bottoms">Bottoms</a>
-      </h3>
-    </li>
-    <li>
-      <h3>
-        <a href="/categories/shoes">Shoes</a>
-      </h3>
-    </li>
-    <li>
-      <h3>
-        <a href="/categories/accessories">Accessories</a>
-      </h3>
-    </li>
-    
-</ul>
-
-
-<!-- Jumbotron Header -->
-<header class="jumbotron hero-spacer">
-  <h1>Welcome!</h1>
-  <p>This is the home page where you can view our craft of the day and the most popular,and trending crafts.</p>
-  <p>
-    <a class="btn btn-primary btn-large" href="/krafts/new">Submit a Kraft!</a>
-  </p>
-</header>
-
-<hr>
-
-<!-- Title -->
-<div class="row">
-  <div class="col-lg-12">
-    <h3>Recent Kraftz</h3>
-  </div>
-</div>
-<!-- /.row -->
-
-<!-- Recent Kraftz -->
-<div class="row text-center">
-
-  <div class="col-lg-12">
-      <div class="row text-center">
-
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://i.ytimg.com/vi/ADfgn0QNKRU/maxresdefault.jpg" alt="">
-          <div class="caption">
-            <h3>Coffee Filter Flowers  </h3>
-            <p>A cute and elegant flower great for a easy and elegant decoration!</p>
-            <p>
-              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/9">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://www.easyt-shirtquilt.com/assets/images/Photo-10-Sewing-Neck-Ribbon.jpg" alt="">
-          <div class="caption">
-            <h3>Shirt</h3>
-            <p>How impressive</p>
-            <p>
-              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/8">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="https://sp.yimg.com/ib/th?id=JN.pZ5cnPBdFlOxIG6mepbf2w&amp;pid=15.1&amp;P=0" alt="">
-          <div class="caption">
-            <h3>Coffee Filter Butterfly</h3>
-            <p>Things you will need for this Kraft : Coffee Filter,Paint Dabbers or Markers, Spray bottle, Clothespin, Glue, and Small googly eyes.</p>
-            <p>
-              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/7">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 hero-feature">
-        <div class="thumbnail">
-          <img src="http://freepages.genealogy.rootsweb.ancestry.com/~hoganfamily/Korbin&#39;s%20Quilt.JPG" alt="">
-          <div class="caption">
-            <h3>Quilt</h3>
-            <p>So warm...</p>
-            <p>
-              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/6">More Info</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-  </div>
-
-</div>
-<!-- /.row -->
-
-<hr>
-
-
     </div>
+  <!-- Page Content -->
+      
+        <div class="jumbotron">
+          <h1>Clueless Closet</h1>
+            <p> View and organize your virtual closet. Relieve the stress of everyday fashion dilemmas.</p>
+
+            <p>
+              <a class="btn btn-primary" href="/users/sign_in">Sign In</a> or
+              <a class="btn btn-primary" href="/users/sign_up">Sign Up</a> today!
+            </p>
+        </div> 
+      </div>     
+      <ul class="list-inline center-block text-center">
+        <li>
+          <h3>
+            <a href="/categories/tops">Tops</a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="/categories/bottoms">Bottoms</a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="/categories/shoes">Shoes</a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="/categories/accessories">Accessories</a>
+          </h3>
+        </li>   
+      </ul>
+
     <!-- /.container -->
 
     <footer class="footer">

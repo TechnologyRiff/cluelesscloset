@@ -16,7 +16,51 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 h1 {
-  font-family: Consolas, Verdana, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.treb {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.comic {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.banner {
+  margin-top: 50px;
+  margin-right: -10px;
+  background-color: E1E3E8
+}
+.banner img {
+  float: left;
+  padding: 10px;
+  padding-top: 0px
+}
+.item {
+  width: 200px
+}
+
+navbars {
+  font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+.top {
+  height: 200;
+}
+
+.bottom {
+  height: 400;
+}
+
+.shoe {
+  height: 100;
+  width: 100;
+}
+.accessory {
+  height: 100;
+  width: 100;
 }
 
 p {
