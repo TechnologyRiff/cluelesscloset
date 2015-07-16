@@ -207,7 +207,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
-  paperclip
+  paperclip (~> 4.2)
   pg
   pundit
   rails (= 4.2.3)

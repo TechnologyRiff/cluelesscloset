@@ -1,3 +1,221 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
-<img src="..app/assets/images/weather_banner.xcf">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CoolKraftz</title>
+    <link rel="stylesheet" media="all" href="/assets/application-968efc89b50561348f0fc8e2c8dc1bc4fef732655809324358ccd90abf06e2b4.css" data-turbolinks-track="true" />
+    <script src="/assets/application-c9ad1cf61ebf24f431fe34c2f7b353a8e9e9b2b3428c1d05f1981dd149fde782.js" data-turbolinks-track="true"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jXtfSU6YvhFnv/b9cE+u1FB3a36sZM1MfvJL3EYBkgJP+k+ckhOpNnL3vymm7TWwdGW5xP668o3zDYSBHYL+QA==" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Cool Kraftz</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/krafts">All Kraftz</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/about">About</a>
+            </li>
+              <li>
+                <a href="/users/sign_in">Login</a>
+              </li>
+              <li>
+                <a href="/users/sign_up">Sign Up</a>
+              </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+
+    <div class="container">
+      <!-- Search -->
+      <div class="row">
+
+        <div class="col-xs-6 col-xs-offset-6">
+          <form role="form" action="/search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="heL3V4uUSg7g31RnPmCqmoYxHk5V//nUhyhv66wRDWZHY+eCVx9dKfWXHbPowjH+oiPM9AchxhUK16C295JhJA==" />
+            <p>
+              <div class="form-group"><label class="sr-only control-label" for="query">Query</label><input placeholder="Search for..." class="form-control" name="query" id="query" type="text" /></div>
+            </p>
+</form>        </div>
+      </div>
+      <!-- /Search -->
+
+      
+
+      <ul class="list-inline center-block text-center">
+    <li>
+      <h3>
+        <a href="/categories/knitting">Knitting</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/sewing">Sewing</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/oragami">Oragami</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/jewelery">Jewelery</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/painting">Painting</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/crocheting">Crocheting</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/paper">Paper</a>
+      </h3>
+    </li>
+    <li>
+      <h3>
+        <a href="/categories/Other">Other</a>
+      </h3>
+    </li>
+</ul>
+
+
+<!-- Jumbotron Header -->
+<header class="jumbotron hero-spacer">
+  <h1>Welcome!</h1>
+  <p>This is the home page where you can view our craft of the day and the most popular,and trending crafts.</p>
+  <p>
+    <a class="btn btn-primary btn-large" href="/krafts/new">Submit a Kraft!</a>
+  </p>
+</header>
+
+<hr>
+
+<!-- Title -->
+<div class="row">
+  <div class="col-lg-12">
+    <h3>Recent Kraftz</h3>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- Recent Kraftz -->
+<div class="row text-center">
+
+  <div class="col-lg-12">
+      <div class="row text-center">
+
+      <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <img src="http://i.ytimg.com/vi/ADfgn0QNKRU/maxresdefault.jpg" alt="">
+          <div class="caption">
+            <h3>Coffee Filter Flowers  </h3>
+            <p>A cute and elegant flower great for a easy and elegant decoration!</p>
+            <p>
+              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/9">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <img src="http://www.easyt-shirtquilt.com/assets/images/Photo-10-Sewing-Neck-Ribbon.jpg" alt="">
+          <div class="caption">
+            <h3>Shirt</h3>
+            <p>How impressive</p>
+            <p>
+              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/8">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <img src="https://sp.yimg.com/ib/th?id=JN.pZ5cnPBdFlOxIG6mepbf2w&amp;pid=15.1&amp;P=0" alt="">
+          <div class="caption">
+            <h3>Coffee Filter Butterfly</h3>
+            <p>Things you will need for this Kraft : Coffee Filter,Paint Dabbers or Markers, Spray bottle, Clothespin, Glue, and Small googly eyes.</p>
+            <p>
+              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/7">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <img src="http://freepages.genealogy.rootsweb.ancestry.com/~hoganfamily/Korbin&#39;s%20Quilt.JPG" alt="">
+          <div class="caption">
+            <h3>Quilt</h3>
+            <p>So warm...</p>
+            <p>
+              <a class="btn btn-default" href="http://coolkraftz.techgirlzcamp.org/krafts/6">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  </div>
+
+</div>
+<!-- /.row -->
+
+<hr>
+
+
+    </div>
+    <!-- /.container -->
+
+    <footer class="footer">
+      <p class="text-center">
+        Made with love at the <a href="http://www.techgirlz.org/summer-camp-2015/">TechGirlz 2015 Summer Camp</a>
+      </p>
+    </footer>
+  </body>
+</html>
