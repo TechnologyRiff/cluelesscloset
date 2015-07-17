@@ -7,12 +7,18 @@ Rails.application.routes.draw do
 
   get 'contact' => 'welcome#contact'
 
-  get 'present1' => 'welcome#present1'
-  get 'present2' => 'welcome#present2'
+  get 'tops' => 'welcome#tops'
+  get 'bottoms' => 'welcome#bottoms'
 
-  get 'navtest' => 'welcome#navtest'
+  get 'outfits' => 'welcome#outfits'
 
-  get 'outfit' => 'welcome#outfit'
+  get 'shoes' => 'welcome#shoes'
+
+  get 'accessories' => 'welcome#accessories'
+
+  get 'favorites' => 'welcome#favorites'
+  get 'my_closet' => 'welcome#my_closet'
+  get 'calendar' => 'welcome#calendar'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
