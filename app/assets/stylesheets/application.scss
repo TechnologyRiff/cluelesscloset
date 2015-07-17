@@ -15,6 +15,11 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+body {
+  padding-top: 50px;
+  padding-bottom: 70px
+}
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -30,7 +35,6 @@ h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .banner {
-  margin-top: 50px;
   margin-right: -10px;
   background-color: E1E3E8
 }
